@@ -5,6 +5,7 @@ import AnimatedHero from './components/AnimatedHero'
 import CustomerShowcase from './components/CustomerShowcase'
 import Footer from './components/Footer'
 import ModernTeams from './components/ModernTeams'
+import ProductDirection from './components/ProductDirection'
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <AnimatedHero />
       <CustomerShowcase />
       <ModernTeams />
+      <ProductDirection />
       <Footer />
     </div>
   )

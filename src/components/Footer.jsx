@@ -69,14 +69,14 @@ const Footer = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 sm:gap-12"
+          className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 sm:gap-12"
         >
           <motion.div 
             variants={columnVariants}
             className="col-span-2 sm:col-span-3 lg:col-span-1 mb-8 lg:mb-0"
           >
             <motion.div 
-              className="flex items-center gap-3"
+              className="flex items-center gap-3 mb-6"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
