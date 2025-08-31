@@ -99,7 +99,7 @@ const ModernTeams = () => {
               className="group cursor-pointer"
             >
               <div
-                className="rounded-2xl p-4 border transition-all duration-300 h-80 hover:shadow-2xl hover:bg-[var(--surface-color)] bg-[var(--bg-color)]"
+                className="rounded-2xl p-4 border transition-all duration-300 h-80 hover:bg-[var(--surface-color)] bg-[var(--bg-color)]"
                 style={{
                   borderColor: "var(--border-color)",
                 }}
@@ -157,7 +157,7 @@ const ModernTeams = () => {
                 style={{ width: "280px", flexShrink: 0 }}
               >
                 <div
-                  className="rounded-2xl p-4 border transition-all duration-300 h-80 hover:shadow-2xl hover:shadow-white/10"
+                  className="rounded-2xl p-4 border transition-all duration-300 h-80 hover:bg-[var(--surface-color)] bg-[var(--bg-color)]"
                   style={{
                     backgroundColor: "var(--surface-color)",
                     borderColor: "var(--border-color)",
