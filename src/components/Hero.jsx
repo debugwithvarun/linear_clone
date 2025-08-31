@@ -18,7 +18,7 @@ const Hero = () => {
 
   return (
     <section
-      className="flex items-center justify-center px-4 sm:px-6 md:px-8 py-12 sm:py-8 min-h-[500px] sm:min-h-[600px] w-full"
+      className="flex items-center justify-center px-4 sm:px-6 md:px-8 py-12 sm:py-8 min-h-[500px] sm:min-h-[600px] max-md:mt-10 w-full"
       style={{ backgroundColor: 'var(--bg-color)' }}
     >
       <motion.div
