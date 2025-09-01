@@ -213,7 +213,7 @@ const ProjectUpdates = () => {
           <motion.div
             key={index}
             className={`absolute flex flex-col mt-10 justify-start px-6 py-3
-              border border-white/10 rounded-xl w-[90%]
+              border border-white/10 rounded-xl w-[90%] h-30
               bg-gradient-to-br from-[var(--surface-color)]/100 to-[var(--surface-color)]/100
               backdrop-blur-sm shadow-lg shadow-black/30
               transform-gpu transition-all duration-300 hover:-translate-y-10 ${index!==0 ?"grayscale hover:grayscale-0":""}`}
