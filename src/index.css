@@ -7,4 +7,6 @@
   --secondary-text:#A9A9A9;
   --border-color:#2A2A2A;
   --accent-color:#E9A93F;
+  --mask-visible: rgba(233, 169, 63, 1);   /* accent color visible */
+  --mask-invisible: rgba(233, 169, 63, 0);
 }

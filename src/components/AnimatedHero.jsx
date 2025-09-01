@@ -1,5 +1,4 @@
 import React from "react";
-
 import { motion } from "framer-motion";
 
 const Sidebar = () => (
@@ -9,11 +8,8 @@ const Sidebar = () => (
     whileInView={{ opacity: 1, x: 0, z: 0, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 1 }}
-    style={{
-      borderColor: "var(--border-color)",
-    }}
+    style={{ borderColor: "var(--border-color)" }}
   >
-
     <div
       className="flex items-center gap-2 p-4 border-b"
       style={{ borderColor: "var(--border-color)" }}
@@ -27,7 +23,6 @@ const Sidebar = () => (
       </button>
     </div>
 
-    {/* Navigation */}
     <nav className="flex-1 p-4 space-y-2">
       <div
         className="flex items-center gap-2 px-2 py-1.5 rounded hover:bg-opacity-10"
@@ -138,7 +133,6 @@ const Sidebar = () => (
 
 const MainContent = () => (
   <div className="flex-1 flex">
-
     <motion.div
       className="w-80 max-md:w-50 border-r flex flex-col"
       style={{
@@ -168,7 +162,6 @@ const MainContent = () => (
         </div>
       </div>
 
-   
       <div className="flex-1 overflow-y-auto">
         <div className="p-2 space-y-1">
           <div
@@ -246,7 +239,6 @@ const MainContent = () => (
       className="flex-1 flex flex-col"
       style={{ backgroundColor: "var(--surface-color)" }}
     >
-     
       <div
         className="p-4 border-b"
         style={{ borderColor: "var(--border-color)" }}
@@ -258,7 +250,12 @@ const MainContent = () => (
           <span className="px-2 py-1 bg-purple-600 text-white text-xs rounded max-[850px]:text-[10px]">
             🌾 Spice harvester
           </span>
-          <span style={{ color: "var(--secondary-text)" }} className="max-[850px]:text-[10px]">ENG-135</span>
+          <span
+            style={{ color: "var(--secondary-text)" }}
+            className="max-[850px]:text-[10px]"
+          >
+            ENG-135
+          </span>
           <div className="ml-auto flex gap-2 max-[850px]:hidden">
             <button style={{ color: "var(--secondary-text)" }}>
               🗑️ Delete notification
@@ -296,11 +293,9 @@ const MainContent = () => (
           </div>
           <div style={{ color: "var(--secondary-text)" }}>
             @ManyToOne (() ={">"} DocumentContent, "comments", &#123; optional:{" "}
-            <span style={{ color: "var(--accent-color)" }}>true</span>,
-            nullable:{" "}
-            <span style={{ color: "var(--accent-color)" }}>false</span>,
-            indexed: <span style={{ color: "var(--accent-color)" }}>true</span>{" "}
-            &#125;)
+            <span style={{ color: "var(--accent-color)" }}>true</span>, nullable:{" "}
+            <span style={{ color: "var(--accent-color)" }}>false</span>, indexed:{" "}
+            <span style={{ color: "var(--accent-color)" }}>true</span> &#125;)
           </div>
           <div style={{ color: "var(--secondary-text)" }}>
             <span style={{ color: "var(--accent-color)" }}>public</span>{" "}
@@ -331,31 +326,29 @@ const MainContent = () => (
 const AnimatedHero = () => {
   return (
     <div className="w-full pt-[100px] max-[850px]:w-[250%]">
-    <div
-  className="flex justify-center w-full border border-white/10 p-2 scale-[1.3] max-[850px]:scale-[1]"
-  style={{
-    backgroundColor: "var(--bg-color)",
-    maskImage: `
-      radial-gradient(circle at top left, rgba(0,0,0,0.9) 90%, rgba(0,0,0,0) 100%),
-      linear-gradient(to right, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0) 100%),
-      linear-gradient(to bottom, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0) 100%)
-    `,
-    WebkitMaskImage: `
-      radial-gradient(circle at top left, rgba(0,0,0,0.9) 90%, rgba(0,0,0,0) 100%),
-      linear-gradient(to right, rgba(0,0,0,0.85) 70%, rgba(0,0,0,0) 100%),
-      linear-gradient(to bottom, rgba(0,0,0,0.85) 30%, rgba(0,0,0,0) 100%)
-    `,
-    WebkitMaskComposite: "destination-in",
-    maskComposite: "intersect",
-    transform: "translateX(2%) rotateX(45deg) rotateY(31deg) rotate(324deg)",
-    transformOrigin: "top left",
-    backfaceVisibility: "hidden",
-  }}
->
-  <Sidebar />
-  <MainContent />
-</div>
-
+      <div
+        className="flex justify-center w-full border border-white/10 p-2 scale-[1.3] max-[850px]:scale-[1]"
+        style={{
+          backgroundColor: "var(--bg-color)",
+          maskImage: `
+            linear-gradient(to bottom, var(--accent-color) 70%, transparent 100%),
+            linear-gradient(to right, var(--accent-color) 40%, transparent 100%)
+          `,
+          WebkitMaskImage: `
+            linear-gradient(to bottom, var(--accent-color) 70%, transparent 100%),
+            linear-gradient(to right, var(--accent-color) 40%, transparent 100%)
+          `,
+          WebkitMaskComposite: "destination-in",
+          maskComposite: "intersect",
+          transform:
+            "translateX(2%) rotateX(45deg) rotateY(31deg) rotate(324deg)",
+          transformOrigin: "top left",
+          backfaceVisibility: "hidden",
+        }}
+      >
+        <Sidebar />
+        <MainContent />
+      </div>
     </div>
   );
 };
